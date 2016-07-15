@@ -4,7 +4,7 @@
  * @category    Webdawe
  * @package     Webdawe_Analytics
  * @author      Anil Paul
- * @copyright   Copyright (c) 2016 Webawe
+ * @copyright   Copyright (c) 2016 Webdawe
  * @license     
  */
 class Webdawe_Analytics_Helper_Config extends Mage_Core_Helper_Data
