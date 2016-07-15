@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--
+/**
+ *
+ * @category    Stuckonyou
+ * @package     Webdawe_Analytics
+ * @author      Anil Paul
+ * @copyright   Copyright (c) 2015 SOY Group
+ * @license     
+ */
+-->
+<config>
+    <modules>
+        <Webdawe_Analytics>
+            <version>1.0.0.0</version>
+        </Webdawe_Analytics>
+    </modules>
+	<admin>
+		<routers>
+			<webdawe_analytics>
+				<use>admin</use>
+				<args>
+					<module>Webdawe_Analytics</module>
+					<frontName>webdawe_analytics</frontName>
+				</args>
+			</webdawe_analytics>
+		</routers>
+	</admin>
+	<global>
+	   <blocks>
+			<webdawe_analytics>
+				<class>Webdawe_Analytics_Block</class>
+			</webdawe_analytics>
+		</blocks>
+		<helpers>
+            <webdawe_analytics>
+                <class>Webdawe_Analytics_Helper</class>
+            </webdawe_analytics>
+        </helpers>
+         <models>
+            <webdawe_analytics>
+                <class>Webdawe_Analytics_Model</class>
+                <resourceModel>webdawe_analytics_resource</resourceModel>
+            </webdawe_analytics> 
+            <webdawe_analytics_resource>
+                <class>Webdawe_Analytics_Model_Resource</class>    
+            </webdawe_analytics_resource>
+        </models>
+		<resources>
+           <webdawe_analytics_write>
+                <connection>
+                    <use>default_write</use>
+                </connection>
+            </webdawe_analytics_write>
+            <webdawe_analytics_read>
+                <connection>
+                    <use>default_read</use>
+                </connection>
+            </webdawe_analytics_read>            
+        </resources>
+    </global>
+    <adminhtml>
+    	<layout>
+            <updates>
+                <webdawe_analytics>
+                    <file>stuckonyou/analytics.xml</file>
+                </webdawe_analytics>
+            </updates>
+        </layout>
+    </adminhtml>
+	<frontend>
+		<layout>
+            <updates>
+                <webdawe_analytics>
+                    <file>stuckonyou/analytics.xml</file>
+                </webdawe_analytics>
+            </updates>
+        </layout>
+		<routers>
+			<webdawe_analytics>
+				<use>standard</use>
+				<args>
+					<module>Webdawe_Analytics</module>
+					<frontName>webdawe_analytics</frontName>
+				</args>
+			</webdawe_analytics>
+		</routers>
+	</frontend>
+</config>

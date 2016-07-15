@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+ <checkout_onepage_success>
+  <reference name="content">
+    <block type="webdawe_analytics/analytics" name="webdawe_analytics_analytics" template="webdawe/analytics/analytics.phtml" />
+  </reference>
+ </checkout_onepage_success>
+</layout>    

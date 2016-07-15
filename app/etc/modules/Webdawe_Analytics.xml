@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * @category    Webdawe
+ * @package     Webdawe_Analytics
+ * @author      Anil Paul
+ * @copyright   Copyright (c) 2016 Webawe
+ * @license     
+ */
+-->
+<config>
+    <modules>
+        <Webdawe_Analytics>
+            <active>true</active>
+            <codePool>local</codePool>
+			<depends>
+				<Mage_Checkout />
+			</depends>
+        </Webdawe_Analytics>
+    </modules>
+</config>
