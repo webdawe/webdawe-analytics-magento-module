@@ -1,0 +1,30 @@
+{
+    "name":"webdawe/webdawe-analytics-magento-module",
+    "type":"magento-module",
+    "license":"BSD3",
+    "homepage":"https://github.com/webdawe/webdawe-analytics-magento-module",
+    "description":"Magento 1 Module for parse analytics tracking scripts with order attributes.",
+   "minimum-stability":"dev",
+  "require":{
+    "phpunit/phpunit":"3.7.9",
+    "n98/magerun":"*",
+    "twig/twig":"1.11.2.*",
+    "fbrnc/aoe_templatehints":"dev-master"
+  },
+  "repositories":[
+    {
+      "type":"composer",
+      "url":"http://packages.firegento.com"
+    }
+  ],
+  "extra":{
+    "magento-root-dir":"./"
+  },
+  "authors":[
+      {
+          "name":"Anil Paul",
+          "email":"webdeveloper363@gmail.com"
+      }
+  ],
+    
+}
