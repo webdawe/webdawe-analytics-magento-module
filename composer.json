@@ -7,8 +7,7 @@
    "minimum-stability":"dev",
   "require":{
     "phpunit/phpunit":"3.7.9",
-    "n98/magerun":"*",
-    "fbrnc/aoe_templatehints":"dev-master"
+    "n98/magerun":"*"
   },
   "repositories":[
     {
